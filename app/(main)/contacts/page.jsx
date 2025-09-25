@@ -16,7 +16,7 @@ export default function ContactsPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  // const { data:groups, isLoading ,refetch} = useGetAllGroupsQuery();
+  
   const { data:userContactedWith , isLoading ,isSuccess} = useGetContactedEntitiesQuery({},{refetchOnMountOrArgChange:true});
 
   // Check for the createGroup parameter when the component mounts
